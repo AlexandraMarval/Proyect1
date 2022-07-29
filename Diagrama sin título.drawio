@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-07-29T13:44:16.311Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="X4KniaOEWUjaIyE7E96a" version="20.2.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-29T13:46:10.491Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="LbyoXMhwdhM5r46GbQ3t" version="20.2.2" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1345" dy="804" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#DAD2D8" math="0" shadow="0">
       <root>
@@ -127,7 +127,7 @@
         <mxCell id="y0xQAXFKnBB2Ua2Eioqg-40" value="3 ObtenerGanancia" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;strokeWidth=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="340" y="700" width="100" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="y0xQAXFKnBB2Ua2Eioqg-41" value="&lt;h6&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;si 2&lt;/i&gt;&lt;/span&gt;&lt;/h6&gt;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="y0xQAXFKnBB2Ua2Eioqg-41" value="&lt;h6&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;si 3&lt;/i&gt;&lt;/span&gt;&lt;/h6&gt;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="400" y="640" width="30" height="10" as="geometry" />
         </mxCell>
         <mxCell id="y0xQAXFKnBB2Ua2Eioqg-42" value="&lt;h6&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;i&gt;no&lt;/i&gt;&lt;/span&gt;&lt;/h6&gt;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;dashed=1;dashPattern=1 4;strokeWidth=0;shadow=0;glass=0;sketch=0;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
