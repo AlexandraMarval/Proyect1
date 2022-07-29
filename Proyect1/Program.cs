@@ -29,12 +29,9 @@ void CalcularArea()
 	double largo = 0.0;
 	string dato = "";
 
-
 	Console.WriteLine("Indique la altura");
 	dato = Console.ReadLine();
 	altura = Convert.ToDouble(dato);
-
-
 
 	Console.WriteLine("Indique el largo");
 	dato = Console.ReadLine();
@@ -70,7 +67,6 @@ void OperacionesMatematicas()
 		resultado = primer + segundo;
 
 		Console.WriteLine("El resultado de la suma es {0}", resultado);
-
 	}
 	else if (opcion == 2)
 	{
@@ -85,18 +81,14 @@ void OperacionesMatematicas()
 		resultado = primer / segundo;
 
 		Console.WriteLine("El resultado de la Division es {0}", resultado);
-
 	}
-
 	else if (opcion == 3)
 	{
 		Console.WriteLine("Adios");
 	}
 }
-
 void ObtenerGanacia()
 {
-
 	string obtener = "";
 	double litros = 0.0;
 	double galon = 3.785;
@@ -126,7 +118,6 @@ void CalcularSueldoSemanal()
 	double dinero = 0.0;
 	double semanal = 0.0;
 
-
 	Console.WriteLine("Cuantas horas a la semana trabaja");
 	datos = Console.ReadLine();
 	horas = Convert.ToDouble(datos);
@@ -136,7 +127,6 @@ void CalcularSueldoSemanal()
 	dinero = Convert.ToDouble(datos);
 
 	semanal = horas * dinero;
-
 
 	Console.WriteLine("El sueldo es {0}", semanal);
 }
