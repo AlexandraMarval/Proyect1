@@ -1,23 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Proyect1
+﻿namespace Proyect1
 {
 	public class LaLangostaAhumada
 	{
-		public void LangostaAhumada()
+		public void CalcularPrecioBanquete()
 		{
-			string dato;
-			double cantidadPersonas;
-			double precioPlato = 0.0;
-			double costoTotalBanquete = 0.0;
-
 			Console.WriteLine("Indique cantidad de personas");
-			dato = Console.ReadLine();
-			cantidadPersonas = Convert.ToDouble(dato);
+			var dato = Console.ReadLine();
+			var cantidadPersonas = Convert.ToInt32(dato);
+
+			var precioPlato = DeterminarPrecioPorPlato(cantidadPersonas);
+			var costoTotalBanquete = cantidadPersonas * precioPlato;
+
+			Console.WriteLine("Costo total banquete es {0}", costoTotalBanquete);
+		}
+
+		private double DeterminarPrecioPorPlato(int cantidadPersonas)
+		{
+			double precioPlato = 0.0;
 
 			if (cantidadPersonas < 200)
 				precioPlato = 95.00;
@@ -26,9 +25,7 @@ namespace Proyect1
 			else if (cantidadPersonas > 300)
 				precioPlato = 75;
 
-			costoTotalBanquete = cantidadPersonas * precioPlato;
-
-			Console.WriteLine("Costo total banquete es {0}", costoTotalBanquete);
-		} 
+			return precioPlato;
+		}
 	}				
 }

@@ -23,50 +23,41 @@ namespace Proyect1
 					CalcularArea calcular = new CalcularArea();
 					calcular.Calcular();
 					break;
-
 				case 2:
 					CalcularSueldoSemanal sueldoSemanal = new CalcularSueldoSemanal();
 					sueldoSemanal.SueldoSemanal();
 					break;
-
 				case 3:
 					CobroPorHoras horas = new CobroPorHoras();
 					horas.CobroHoras();
 					break;
-
 				case 4:
 					ConversionADolares conversion = new ConversionADolares();
 					conversion.ConversionDolares();
 					break;
-
 				case 5:
 					ElHarapientoDistinguido tienda = new ElHarapientoDistinguido();
 					tienda.ElHarapiento();
 					break;
-
 				case 6:
 					LaBrochaGorda laBrocha = new LaBrochaGorda();
 					laBrocha.LaGorda();
 					break;
-
 				case 7:
 					ObtenerGanancia obtener = new ObtenerGanancia();
 					obtener.Ganancia();
 					break;
-
 				case 8:
 					ObtenerLaEdad edad = new ObtenerLaEdad();
 					edad.LaEdad();
 					break;
-
 				case 9:
 					OperacionesMatematicas operaciones = new OperacionesMatematicas();
 					operaciones.Matematicas();
 					break;
-
 				case 10:
 					LaLangostaAhumada laLangosta = new LaLangostaAhumada();
-					laLangosta.LangostaAhumada();
+					laLangosta.CalcularPrecioBanquete();
 					break;
 			}			
 		}
