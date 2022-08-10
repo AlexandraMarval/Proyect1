@@ -11,43 +11,30 @@ namespace Proyect1
 		public void LangostaAhumada()
 		{
 			string dato;
-			double banqueteAcomprar;
-			double tarifaPorPersona = 95.00;
-			double tarifa1 = 85.00;
-			double tarifa2 = 75.00;
-			double cantidadPersona = 0.0;
-			double cantidadPersonaMenor = 0.0;
-			double cantidadPersonaMayor = 0.0;
+			double cantidadPersonas;
+			double precioPlato = 0.0;
 			double costoTotalBanquete = 0.0;
 
 			Console.WriteLine("Indique cantidad de personas");
 			dato = Console.ReadLine();
-			banqueteAcomprar = Convert.ToDouble(dato);
+			cantidadPersonas = Convert.ToDouble(dato);
 
-			if (banqueteAcomprar < 200)
+			if (cantidadPersonas < 200)
 			{
-				cantidadPersona = banqueteAcomprar * tarifaPorPersona;
-
-				costoTotalBanquete = cantidadPersona;
-
-				Console.WriteLine("Costo total banquete es {0}", costoTotalBanquete);
+				precioPlato = 95.00;
 			}
-			else if(banqueteAcomprar < 300)
+			else if (cantidadPersonas < 300)
 			{
-				cantidadPersonaMenor = banqueteAcomprar * tarifa1;
-
-				costoTotalBanquete = cantidadPersonaMenor;
-
-				Console.WriteLine("Costo total banquete es {0}", costoTotalBanquete);
+				precioPlato = 85.00;
 			}
-			else if(banqueteAcomprar > 300)
+			else if (cantidadPersonas > 300)
 			{
-				cantidadPersonaMayor = banqueteAcomprar * tarifa2;
+				precioPlato = 75;
+			}
 
-				costoTotalBanquete = cantidadPersonaMayor;
+			costoTotalBanquete = cantidadPersonas * precioPlato;
 
-				Console.WriteLine("Costo total banquete es {0}", costoTotalBanquete);
-			}			
+			Console.WriteLine("Costo total banquete es {0}", costoTotalBanquete);
 		} 
 	}				
 }
