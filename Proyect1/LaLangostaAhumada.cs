@@ -20,17 +20,11 @@ namespace Proyect1
 			cantidadPersonas = Convert.ToDouble(dato);
 
 			if (cantidadPersonas < 200)
-			{
 				precioPlato = 95.00;
-			}
 			else if (cantidadPersonas < 300)
-			{
 				precioPlato = 85.00;
-			}
 			else if (cantidadPersonas > 300)
-			{
 				precioPlato = 75;
-			}
 
 			costoTotalBanquete = cantidadPersonas * precioPlato;
 
