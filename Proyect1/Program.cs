@@ -17,51 +17,53 @@ namespace Proyect1
 			dato = Console.ReadLine();
 			opcion = Convert.ToInt32(dato);
 
-			if (opcion == 1)
+			switch (opcion)
 			{
-				CalcularArea calcular = new CalcularArea();
-				calcular.Calcular();
-			}
-			else if (opcion == 2)
-			{
-				CalcularSueldoSemanal calcular = new CalcularSueldoSemanal();
-				calcular.SueldoSemanal();
-			}
-			else if(opcion == 3)
-			{
-				CobroPorHoras horas = new CobroPorHoras();
-				horas.CobroHoras();
-			}
-			else if (opcion == 4)
-			{
-				ConversionADolares conversion = new ConversionADolares();
-				conversion.ConversionDolares();
-			}
-			else if (opcion == 5)
-			{
-				ElHarapientoDistinguido tienda = new ElHarapientoDistinguido();
-				tienda.ElHarapiento();
-			}
-			else if (opcion == 6)
-			{
-				LaBrochaGorda laBrocha = new LaBrochaGorda();
-				laBrocha.LaGorda();
-			}
-			else if (opcion == 7)
-			{
-				ObtenerGanancia obtener = new ObtenerGanancia();
-				obtener.Ganancia();
-			}
-			else if (opcion == 8)
-			{
-				ObtenerLaEdad obtener = new ObtenerLaEdad();
-				obtener.LaEdad();
-			}
-			else if (opcion == 9)
-			{
-				OperacionesMatematicas operaciones = new OperacionesMatematicas();
-				operaciones.Matematicas();
-			}
-		}	
+				case 1:
+					CalcularArea calcular = new CalcularArea();
+					calcular.Calcular();
+					break;
+
+				case 2:
+					CalcularSueldoSemanal sueldoSemanal = new CalcularSueldoSemanal();
+					sueldoSemanal.SueldoSemanal();
+					break;
+
+				case 3:
+					CobroPorHoras horas = new CobroPorHoras();
+					horas.CobroHoras();
+					break;
+
+				case 4:
+					ConversionADolares conversion = new ConversionADolares();
+					conversion.ConversionDolares();
+					break;
+
+				case 5:
+					ElHarapientoDistinguido tienda = new ElHarapientoDistinguido();
+					tienda.ElHarapiento();
+					break;
+
+				case 6:
+					LaBrochaGorda laBrocha = new LaBrochaGorda();
+					laBrocha.LaGorda();
+					break;
+
+				case 7:
+					ObtenerGanancia obtener = new ObtenerGanancia();
+					obtener.Ganancia();
+					break;
+
+				case 8:
+					ObtenerLaEdad edad = new ObtenerLaEdad();
+					edad.LaEdad();
+					break;
+
+				case 9:
+					OperacionesMatematicas operaciones = new OperacionesMatematicas();
+					operaciones.Matematicas();
+					break;
+			}			
+		}
 	}
 }
