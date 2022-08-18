@@ -13,7 +13,7 @@ namespace Proyect1
 		{			
 			string dato;
 			int opcion = 0;
-			Console.WriteLine("Indique que programa desea? 1 Calcular, 2 CalcularSueldoSemanal, 3 CobroPorHoras, 4 ConversionADolares, 5 ElHarapientoDistinguido, 6 LaBrochaGorda, 7 ObtenerGanancia, 8 ObtenerLaEdad, 9 OperacionesMatematicas, 10 La langosta ahumada ");
+			Console.WriteLine("Indique que programa desea? 1 Calcular, 2 CalcularSueldoSemanal, 3 CobroPorHoras, 4 ConversionADolares, 5 ElHarapientoDistinguido, 6 LaBrochaGorda, 7 ObtenerGanancia, 8 ObtenerLaEdad, 9 OperacionesMatematicas, 10 La langosta ahumada, 11 Mayor y menor, 12 El naufrago satisfecho ");
 			dato = Console.ReadLine();
 			opcion = Convert.ToInt32(dato);
 
@@ -58,6 +58,14 @@ namespace Proyect1
 				case 10:
 					LaLangostaAhumada laLangosta = new LaLangostaAhumada();
 					laLangosta.CalcularPrecioBanquete();
+					break;
+				case 11:
+					MayorYMenor mayorMenor = new MayorYMenor();
+					mayorMenor.MayorYMenorDeTresNumeros();
+					break;
+				case 12:
+					ElNaufragoSatisfecho satisfecho = new ElNaufragoSatisfecho();
+					satisfecho.Ejecutar();
 					break;
 			}			
 		}
