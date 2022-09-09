@@ -12,48 +12,53 @@ namespace Proyect1
 		{
 			int añosantiguedadTrabajando = 0;
 			double sueldo = 0.0;
-			double monto = 0.0;
 			double bonoPorAños = 0.0;
+			double MontoTotal = 0.0;			
 	
 			Console.WriteLine("Indique años de antiguedad trabajando");
 			añosantiguedadTrabajando = Convert.ToInt32(Console.ReadLine());
 
+			bonoPorAños = BonoDeAntiguedadTrabajando(añosantiguedadTrabajando);			
+
 			Console.WriteLine("Indique sueldo");
 			sueldo = Convert.ToDouble(Console.ReadLine());
 
-			Console.WriteLine("Su bono de antiguedad es:");
-			bonoPorAños = BonoDeAntiguedadTrabajando(añosantiguedadTrabajando);
-			Console.WriteLine("{0}", bonoPorAños);
-
 			Console.WriteLine("Su monto de bono de sueldo es:");
-			monto = BonoDesueldo(sueldo);
-			Console.WriteLine("{0}", monto);
+			MontoTotal = BonoDesueldo(bonoPorAños, sueldo);
+			Console.WriteLine("{0}", MontoTotal);
 
 		}
-		private double BonoDeAntiguedadTrabajando(int añosantiguedadTrabajando)
+		private double BonoDeAntiguedadTrabajando(double añosantiguedadTrabajando)
 		{
-			double monto = 0.0;
+			double bonoPorAños = 0.0;
 
-			if (añosantiguedadTrabajando > 2 && añosantiguedadTrabajando < 5)			
-				monto = añosantiguedadTrabajando * 1.20;			
-			else if(añosantiguedadTrabajando > 5)		
-				monto = añosantiguedadTrabajando * 1.30;	
-			return monto;	
+			if (añosantiguedadTrabajando > 2 && añosantiguedadTrabajando < 5)
+				bonoPorAños =  1.20;
+			else if(añosantiguedadTrabajando > 5)
+				bonoPorAños =  1.30;
+			return bonoPorAños;	
 		}
-		private double BonoDesueldo(double sueldo)
-		{
-			double monto = 0.0;
+		private double BonoDesueldo(double bonoPorAños, double sueldo)
+		{			
+			double bono = 0.0;
+			double MontoTotal = 0.0;
 
-			if (sueldo < 1000)			
-				monto = sueldo * 1.25;			
-			else if(sueldo > 1000 && sueldo <= 3500)			
-				monto = sueldo * 1.15;			
-			else if(sueldo > 3500)			
-				monto = sueldo * 1.10;		
-			return monto;
-
+			if (sueldo < 1000)
+			{
+				bono = sueldo * 1.25;
+				MontoTotal = bono * bonoPorAños;
+			}							
+			else if(sueldo > 1000 && sueldo <= 3500)
+			{
+				bono = sueldo * 1.15;
+				MontoTotal = bono * bonoPorAños;
+			}							
+			else if(sueldo > 3500)
+			{
+				bono = sueldo * 1.10;
+				MontoTotal = bono * bonoPorAños;
+			}					
+			return MontoTotal;
 		}
-
-
 	}
 }

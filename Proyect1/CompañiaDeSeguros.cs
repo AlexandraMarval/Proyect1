@@ -22,15 +22,13 @@ namespace Proyect1
 
 		private double Polizas(string tiposDePolizas)
 		{
-			string a = "";
-			string b = "";
-			string si = "";
-			string no = "";
+			string a = "a";
+			string b = "b";
+			string si = "si";
+			string no = "no";
 			int edad;
 			double monto = 0.0;
-			string enfermedad;
-			
-			double polizaB = 950;					
+			string enfermedad;							
 
 			if (tiposDePolizas == a)
 			{
@@ -41,11 +39,11 @@ namespace Proyect1
 				enfermedad = Console.ReadLine();
 				
 				if (enfermedad == si && edad <= 40)			
-					monto = 1.200 * 1.5;				
+					monto = 1200 * 1.5;				
 				else if(enfermedad == no)				
-					monto = 1.200 * 1.10;
+					monto = 1200 * 1.10;
 				else if (edad >= 40)
-					monto = 1.200 * 1.20;
+					monto = 1200 * 1.20;
 			}
 			else if(tiposDePolizas == b)
 			{
