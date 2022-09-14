@@ -3,11 +3,11 @@ namespace Proyect1
 {
 	public class BecasEstudiantites
 	{
-		public void becas()
+		public void ObtenerMontoBeca()
 		{
-			int edad = 18;
-			double promedio = 0;
-			double becas;
+			int edad;
+			double promedio;
+			double becas = 0;
 			
 			Console.WriteLine("Indique su edad");
 			edad = Convert.ToInt32(Console.ReadLine());
@@ -17,27 +17,27 @@ namespace Proyect1
 
 			if(edad >= 18)
 			{
-				Console.WriteLine("Su monto de la beca es:");
 				becas = ObtenerBeca(promedio);
-				Console.WriteLine("{0}", becas);
-
+				Console.WriteLine($"Su monto de la beca es {becas}");
 			}			
 			else if (edad < 18)
 			{
 				Console.WriteLine("Su monto de la beca es:");
 				becas = ObtenerBecas(promedio);
 				Console.WriteLine("{0}", becas);
-			}							
+			}
 		}
 
 		private double ObtenerBeca(double promedio)
-		{			
-			if (promedio >= 9)		
-				return 2000.00;			
-			else if ( promedio >= 7.5 )
-				return 1000.00;				
-			else if ( promedio <= 7.5 && promedio >= 6)
-				return 500.00;			
+		{
+			if (promedio >= 9)
+				return 2000.00;
+			else if (promedio >= 7.5)
+				return 1000.00;
+			else if (promedio <= 7.5 && promedio >= 6)
+				return 500.00;
+			else
+				Console.WriteLine("Le invitamos a estudiar mas para el siguiente año");
 			return promedio;
 		}
 

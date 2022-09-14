@@ -73,7 +73,7 @@ namespace Proyect1
 					break;
 				case 14:
 					BecasEstudiantites estudiantes = new BecasEstudiantites();
-					estudiantes.becas();
+					estudiantes.ObtenerMontoBeca();
 					break;
 				case 15:
 					BonoMensualATrabajadores bono = new BonoMensualATrabajadores();
