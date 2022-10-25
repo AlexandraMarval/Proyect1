@@ -16,12 +16,10 @@ namespace Proyect1
 			double semanal = 0.0;
 
 			Console.WriteLine("Cuantas horas a la semana trabaja");
-			datos = Console.ReadLine();
-			horas = Convert.ToDouble(datos);
+			horas = Convert.ToDouble(Console.ReadLine());
 
-			Console.WriteLine("Cuanto dinero recibe por hora");
-			datos = Console.ReadLine();
-			dinero = Convert.ToDouble(datos);
+			Console.WriteLine("Cuanto dinero recibe por hora");		
+			dinero = Convert.ToDouble(Console.ReadLine());
 
 			semanal = horas * dinero;
 

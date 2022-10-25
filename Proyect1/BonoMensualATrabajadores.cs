@@ -12,6 +12,7 @@
 	
 			Console.WriteLine("Indique los años de antiguedad trabajando");
 			añosAntiguedadTrabajando = Convert.ToInt32(Console.ReadLine());
+
 			Console.WriteLine("Indique el sueldo");
 			salario = Convert.ToDouble(Console.ReadLine());
 

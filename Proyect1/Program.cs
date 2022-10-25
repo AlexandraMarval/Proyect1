@@ -13,7 +13,7 @@ namespace Proyect1
 		{			
 			string dato;
 			int opcion = 0;
-			Console.WriteLine("Indique que programa desea? $1 Calcular, $2 CalcularSueldoSemanal, 3 CobroPorHoras, 4 ConversionADolares, 5 ElHarapientoDistinguido, 6 LaBrochaGorda, 7 ObtenerGanancia, 8 ObtenerLaEdad, 9 OperacionesMatematicas, 10 La langosta ahumada, 11 Mayor y menor, 12 El naufrago satisfecho, 13 El cometa, 14 Becas estudiantiles, 15 Bono mensuales de trabajadores, 16 compañia de seguros, 17 Bono para empleados de una tienda, 18 determinar sueldo semanal ");
+			Console.WriteLine("Indique que programa desea? $1 Calcular, $2 CalcularSueldoSemanal, 3 CobroPorHoras, 4 ConversionADolares, 5 ElHarapientoDistinguido, 6 LaBrochaGorda, 7 ObtenerGanancia, 8 ObtenerLaEdad, 9 OperacionesMatematicas, 10 La langosta ahumada, 11 Mayor y menor, 12 El naufrago satisfecho, 13 El cometa, 14 Becas estudiantiles, 15 Bono mensuales de trabajadores, 16 compañia de seguros, 17 Bono para empleados de una tienda, 18 determinar sueldo semanal, 19 ObtenerPromedioEdades");
 			dato = Console.ReadLine();
 			opcion = Convert.ToInt32(dato);
 
@@ -90,6 +90,10 @@ namespace Proyect1
 				case 18:
 					DeterminarSueldoSemanal sueldoSemanal1 = new DeterminarSueldoSemanal();
 					sueldoSemanal1.SueldoSemanal();
+					break;
+				case 19:
+					var obtenerLaEdad = new ObtenerLaEdadDeAlumnos();
+					obtenerLaEdad.ObtenerLaEdadDeNumeroDeAlumnos();
 					break;
 
 			}			
